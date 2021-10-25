@@ -113,6 +113,6 @@ In reality a mass-spring system cannot have a free-free boundary condition, sinc
 
 However, if the general mathmatical procudure for finding a solution to the mass-spring system is followed for this boundary condition, then a solution is still obtainable. 
 
-From the elongation equations, the system is undertermined for two free ends becuase there is one more mass than springs and no boundary conditions to apply. This poses a problem when solving for the displacements becuase the stiffness matrix, K, is not invertible. However, the psuedo-inverse of the K matrix can be used to solve the system.
+From the elongation equations, the system is undertermined for two free ends becuase there could be more masses than springs and no boundary conditions to apply. This poses a problem when solving for the displacements becuase the stiffness matrix, K, is not invertible. However, the psuedo-inverse of the K matrix can be used to solve the system.
 
 Because the masses can move without stretching or compressing the springs in a free-free system, it imposes difficulty for the math, since the displacements of the masses are related to the springs' elongations. So this can explain why the outputs for a system with two free ends do not always make since. 
