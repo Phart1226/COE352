@@ -15,17 +15,15 @@ def solve_stress(C, e):
 def solve_elong(A, u):
     return np.matmul(A, u)
 
-def calc_svd(A, type):
+def calc_svd(A):
     U, s, VH = np.linalg.svd(A)
-
-    if type == 'singular':
-        return s
+    return s
 
 def find_sing_eig(A, C, A_t, K):
-    sing_A = calc_svd(A, 'singular')
-    sing_C = calc_svd(C, 'singular')
-    sing_A_t = calc_svd(A_t, 'singular')
-    sing_K = calc_svd(K, 'singular')
+    sing_A = calc_svd(A)
+    sing_C = calc_svd(C)
+    sing_A_t = calc_svd(A_t)
+    sing_K = calc_svd(K)
 
     print('A matrix: ')
     print(A)
