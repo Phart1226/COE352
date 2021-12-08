@@ -166,21 +166,28 @@ After going through the desired number of timesteps the final u_n vector is prin
  0.309845339376259 0.327767761614359 0.309845339376260 0.257851201568156
  0.176930981481779 0.0750985665896655 1.22464679914735e-16]
 ```
+![alt text](https://github.com/Phart1226/COE352/blob/master/Project2/FEGraph.JPG?raw=true)
+
 ### Backward Euler Method
 ```
 [0 0.114716515595626 0.218203779367789 0.300331736900306 0.353061131490766 0.371230442609360 0.353061131490766 0.300331736900306 0.218203779367789 0.114716515595626 1.22464679914735e-16]
 ```
+![alt text](https://github.com/Phart1226/COE352/blob/master/Project2/BEGraph.JPG?raw=true)
 
 A graph for the analytical solution vs the numerical solution is printed 
 for the user
 
 
+
 ## Project Questions
 
-1. *At what dt does instability occur and how does the solution change as the number of nodes decreases?*
-    The 1D Galerkin method used, is unstable between dt's of 1/551 and 1/600. As the number of nodes decreases, the solution becomes less accurate and does not align with the analytical solution very well. 
-2. *What happens as the timestep becomes greater than or equal to the spatial step size?* 
-    As the spatial step size becomes greater than or equal to the timestep, more information is forward propagating spatially than information dependent on time is, so the model is going to be inaccuarate since spatial accuracy is lost.
+1. **At what dt does instability occur and how does the solution change as the number of nodes decreases?**
+
+The 1D Galerkin method used, is unstable between dt's of 1/551 and 1/600. As the number of nodes decreases, the solution becomes less accurate and does not align with the analytical solution very well. 
+
+2. **What happens as the timestep becomes greater than or equal to the spatial step size?** 
+
+As the spatial step size becomes greater than or equal to the timestep, more information is forward propagating spatially than information dependent on time is, so the model is going to be inaccuarate since spatial accuracy is lost.
 
 
 
